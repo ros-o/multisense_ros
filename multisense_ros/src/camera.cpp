@@ -627,7 +627,6 @@ Camera::Camera(Channel* driver, const std::string& tf_prefix) :
     msg.motorType               = device_info_.motorType;
     msg.motorGearReduction      = device_info_.motorGearReduction;
 
-    msg.apiBuildDate            = version_info_.apiBuildDate;
     msg.apiVersion              = version_info_.apiVersion;
     msg.firmwareBuildDate       = version_info_.sensorFirmwareBuildDate;
     msg.firmwareVersion         = version_info_.sensorFirmwareVersion;
@@ -2408,7 +2407,6 @@ void Camera::deviceInfoDiagnostic(diagnostic_updater::DiagnosticStatusWrapper& s
     stat.add("motor type",                device_info_.motorType);
     stat.add("motor gear reduction",      device_info_.motorGearReduction);
 
-    stat.add("api build date",            version_info_.apiBuildDate);
     stat.add("api version",               version_info_.apiVersion);
     stat.add("firmware build date",       version_info_.sensorFirmwareBuildDate);
     stat.add("firmware version",          version_info_.sensorFirmwareVersion);

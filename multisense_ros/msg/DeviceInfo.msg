@@ -28,7 +28,6 @@ string motorName
 uint32 motorType
 float32 motorGearReduction
 
-string apiBuildDate
 uint16 apiVersion
 string firmwareBuildDate
 uint16 firmwareVersion
